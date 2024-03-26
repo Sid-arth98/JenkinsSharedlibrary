@@ -1,4 +1,5 @@
 def call (String GithubURL) {
-	echo "Cloning repository from: ${GithubURL}"
-	"git clone ${GithubURL}"
+	"Cloning repository from: ${GithubURL}"
+	#"git clone ${GithubURL}"
+	git branch: 'main', url:${GithubURL}
 }
